@@ -12,7 +12,7 @@ T = np.array([[0],
 def sigmoid(x):
     return 1/(1+np.exp(-x))
 #sigmoid derivative normalde sigmoid(x) * (1-sigmoid(x)) halinde yazılır
-#fakat vurada zaten sigmoid_derivative fonksiyonuna girdi verirken sigmoid
+#fakat burada zaten sigmoid_derivative fonksiyonuna girdi verirken sigmoid
 #fonksiyonundan geçmiş bir değişken kullandığımız için gerek yoktur.
 def sigmoid_derivative(x):
     return x*(1-x)
